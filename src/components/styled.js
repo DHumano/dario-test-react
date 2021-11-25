@@ -26,5 +26,4 @@ export const Alert = styled.div`
     display: flex;
     justify-content: space-around;
     padding-top: 1em;
-    border: 1px solid red;
 `;
