@@ -27,7 +27,7 @@ const Container = () => {
 
     return (
         <>
-            <S.Title>Hacker Dormitory</S.Title>
+            <S.Header>Hacker Dormitory</S.Header>
             <S.Component>
                 <StudentListContext.Provider value={values}>
                     <Search />

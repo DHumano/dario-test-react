@@ -19,7 +19,13 @@ const Search = () => {
     };
 
     const persistList = () => {
-        setList(list.push(student));
+        setList([...list, student]);
+    };
+
+    const handleInputsClean = () => {
+        setError(false);
+        setStudent('');
+        setJoiningDate(new Date().toISOString());
     };
 
     const handleClick = () => {
@@ -42,6 +48,8 @@ const Search = () => {
         }
 
         persistList();
+        handleInputsClean();
+
         return true;
     };
 

@@ -6,7 +6,7 @@ export const Component = styled.div`
     height: 22em;
 `;
 
-export const Title = styled.div`
+export const Header = styled.div`
     background: #2e374a;
     width: 22em;
     height: 3em;
@@ -14,6 +14,14 @@ export const Title = styled.div`
     justify-content: center;
     align-items: center;
     color: green;
+`;
+
+export const Subtitle = styled.div`
+    color: black;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const Wrapper = styled.div`
@@ -24,4 +32,8 @@ export const Wrapper = styled.div`
 
 export const ContainerError = styled.div`
     margin: 3em;
+`;
+
+export const List = styled.div`
+    color: black;
 `;
