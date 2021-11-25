@@ -1,16 +1,10 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React, { useContext } from 'react';
+import React from 'react';
 import { useStudentList } from './Wrapper';
 
 const ResidentList = () => {
-    const { test, setTest } = useStudentList();
-    console.log(test);
-    setTimeout(() => {
-        setTest('testtst');
-        console.log(test);
-    }, 1000);
+    const { list } = useStudentList();
 
-    return <div>test</div>;
+    return list.map((element) => <div>{element}</div>);
 };
 export default ResidentList;
