@@ -22,9 +22,6 @@ export const Wrapper = styled.div`
     padding-top: 1em;
 `;
 
-export const Alert = styled.div`
-    display: flex;
-    justify-content: space-around;
-    padding-top: 1em;
-    border: 1px solid red;
+export const ContainerError = styled.div`
+    margin: 3em;
 `;
