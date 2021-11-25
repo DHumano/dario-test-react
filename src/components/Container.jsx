@@ -8,9 +8,9 @@ export const StudentListContext = createContext();
 
 export const useStudentList = () => useContext(StudentListContext);
 
-const Wrapper = () => {
+const Container = () => {
     const [student, setStudent] = useState('');
-    const [joiningDate, setJoiningDate] = useState('');
+    const [joiningDate, setJoiningDate] = useState(new Date().toISOString());
     const [error, setError] = useState(false);
     const [list, setList] = useState([]);
 
@@ -27,7 +27,7 @@ const Wrapper = () => {
 
     return (
         <>
-            <S.Title />
+            <S.Title>Hacker Dormitory</S.Title>
             <S.Component>
                 <StudentListContext.Provider value={values}>
                     <Search />
@@ -39,4 +39,4 @@ const Wrapper = () => {
     );
 };
 
-export default Wrapper;
+export default Container;

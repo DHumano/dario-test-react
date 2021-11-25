@@ -1,11 +1,11 @@
 import React from 'react';
-import { useStudentList } from './Wrapper';
-// import * as S from './Styled';
+import { useStudentList } from './Container';
+import * as S from './Styled';
 
 const Error = () => {
     const { error } = useStudentList();
 
-    return <div>{error}</div>;
+    return <S.Alert>{error}</S.Alert>;
 };
 
 export default Error;

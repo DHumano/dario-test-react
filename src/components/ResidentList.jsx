@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import { useStudentList } from './Wrapper';
+import { useStudentList } from './Container';
 
 const ResidentList = () => {
     const { list } = useStudentList();
